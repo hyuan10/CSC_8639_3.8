@@ -2,3 +2,12 @@
 /shelf/
 /workspace.xml
 /venv
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+Vent.bak/
