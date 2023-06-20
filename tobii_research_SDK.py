@@ -26,9 +26,9 @@ def gaze_data_callback(gaze_data):
 
 ## Save data function
 def save_gaze_data_to_csv(gaze_data):
-    timestamp = time.strftime("%Y%m%d_%H%M%S")  # Generate timestamp
-    folder_path = "/Users/harvey/IdeaProjects/CSC_8639_3.8/Gaze Data"
-    filename = f"{folder_path}/gaze_data_{timestamp}.csv"
+    timestamp = time.strftime("%Y%m%d_%H%M%S")  ## Generate timestamp
+    folder_path = "/Users/harvey/IdeaProjects/CSC_8639_3.8/Gaze Data" ## Specify folder path for data
+    filename = f"{folder_path}/gaze_data_{timestamp}.csv" ## File name with the folderpath and timestamp
 
     ## Extract gaze points
     gaze_left_eye = gaze_data['left_gaze_point_on_display_area']
@@ -44,7 +44,7 @@ def save_gaze_data_to_csv(gaze_data):
 my_eyetracker.subscribe_to(tr.EYETRACKER_GAZE_DATA, gaze_data_callback, as_dictionary=True)
 
 ## Time interval
-time.sleep(5)
+time.sleep(10)
 
 ## Unsubscribe from data
 my_eyetracker.unsubscribe_from(tr.EYETRACKER_GAZE_DATA, gaze_data_callback)
