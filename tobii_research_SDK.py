@@ -2,6 +2,7 @@ import tobii_research as tr
 import csv
 import time
 
+
 ## Finds the Eye tracker
 found_eyetrackers = tr.find_all_eyetrackers()
 
@@ -26,7 +27,8 @@ def gaze_data_callback(gaze_data):
 ## Save data function
 def save_gaze_data_to_csv(gaze_data):
     timestamp = time.strftime("%Y%m%d_%H%M%S")  # Generate timestamp
-    filename = f"gaze_data_{timestamp}.csv"
+    folder_path = "/Users/harvey/IdeaProjects/CSC_8639_3.8/Gaze Data"
+    filename = f"{folder_path}/gaze_data_{timestamp}.csv"
 
     ## Extract gaze points
     gaze_left_eye = gaze_data['left_gaze_point_on_display_area']
