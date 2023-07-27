@@ -3,18 +3,18 @@
 
 // === Nodes and Flows ===
 
-2018 [4544] Revenue
+2018 [4591] Revenue
 
 
-Revenue [3902] Gross Profit
-Revenue [641] Cost of Sales
+Revenue [3953] Gross Profit
+Revenue [638] Cost of Sales
 
-Gross Profit [3219] Admin Expenses
-Other operating income [377] Operating(loss)/profit
-Gross Profit [682] Operating(loss)/profit
-Dividend Income [566] (Loss)/profit before tax
-Operating(loss)/profit [903] (Loss)/profit before tax
-Operating(loss)/profit [156] Tax
+Gross Profit [3310] Admin Expenses
+Other operating income [365] Operating(loss)/profit
+Gross Profit [643] Operating(loss)/profit
+Dividend Income [577] (Loss)/profit before tax
+Operating(loss)/profit [859] (Loss)/profit before tax
+Operating(loss)/profit [149] Tax
 
 
 

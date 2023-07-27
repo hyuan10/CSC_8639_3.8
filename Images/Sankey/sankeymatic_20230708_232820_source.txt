@@ -1,0 +1,105 @@
+// SankeyMATIC diagram inputs - Saved: 08/07/2023, 23:28:20
+// https://sankeymatic.com/build/
+
+// === Nodes and Flows ===
+
+2017 [5109] Revenue
+
+
+Revenue [4308] Gross Profit
+Revenue [801] Cost of Sales
+
+Gross Profit [3749] Admin Expenses
+Other operating income [420] Operating(loss)/profit
+Gross Profit [559] Operating(loss)/profit
+Dividend Income [600] (Loss)/profit before tax
+Operating(loss)/profit [779] (Loss)/profit before tax
+Operating(loss)/profit [200] Tax
+
+
+
+
+
+
+
+// Profit - blue
+:Gross Profit #48e <<
+
+// Dividend Income - Light Green
+:Dividend Income #80E05A<<
+
+// Operating(loss)/profit - Light Green
+:Operating(loss)/profit #80E05A<<
+
+// (Loss)/profit before tax - Light Green
+:(Loss)/profit before tax #80E05A<<
+
+// Admin expense - Pink red
+:Admin Expenses #E98498<<
+
+// Tax - Pink red
+:Tax #E98498<<
+
+// Cost - grayish-gold
+:Cost of Sales #E98498<<
+
+// main Revenue node: dark grey
+:Revenue #444
+
+// === Moved Nodes ===
+
+move Cost of Sales 0.00286, 0.86919
+move Revenue -0.17401, 0.00409
+move Gross Profit -0.3732, 0.02781
+move Admin Expenses 0.00715, 0.20678
+move Other operating income -0.23839, -0.83557
+move Operating(loss)/profit -0.21625, -0.68776
+move Tax -0.00143, -0.69031
+move (Loss)/profit before tax -0.00859, -0.75161
+move Dividend Income -0.22454, -0.94207
+
+// === Settings ===
+
+size w 1000
+  h 1000
+margin l 12
+  r 12
+  t 18
+  b 20
+bg color #ffffff
+  transparent N
+node w 5
+  h 70
+  spacing 70
+  border 0
+  theme none
+  color #888888
+  opacity 1
+flow curvature 0.5
+  inheritfrom source
+  color #f50505
+  opacity 0.55
+layout order exact
+  justifyorigins N
+  justifyends Y
+  reversegraph N
+  attachincompletesto nearest
+labels color #000000
+  highlight 0.5
+  fontface sans-serif
+labelname appears Y
+  size 13
+  weight 400
+labelvalue appears Y
+  fullprecision Y
+labelposition first before
+  breakpoint 2
+value format ',.'
+  prefix '£'
+  suffix ''
+themeoffset a 9
+  b 0
+  c 0
+  d 0
+meta mentionsankeymatic N
+  listimbalances Y
