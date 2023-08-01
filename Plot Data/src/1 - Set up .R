@@ -6,3 +6,7 @@ setwd("..")
 library(ProjectTemplate)
 load.project()
 
+# Load the required libraries
+library(ggplot2)
+library(RColorBrewer)
+library(readr)
