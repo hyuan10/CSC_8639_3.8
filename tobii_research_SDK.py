@@ -9,7 +9,7 @@ def run_eye_tracking():
     my_eyetracker = found_eyetrackers[0]
 
     # Create CSV file and writer for main CSV
-    folder_path = "/Users/harvey/IdeaProjects/CSC_8639_3.8/Gaze Data"
+    folder_path = "/Users/harvey/IdeaProjects/CSC_8639_3.8/Plot Data/data/Gaze Data"
     main_filename = f"{folder_path}/gaze_data.csv"
     main_csv_file = open(main_filename, mode='a', newline='')
     main_writer = csv.writer(main_csv_file)
