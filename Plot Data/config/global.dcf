@@ -1,8 +1,8 @@
 version: 0.10.3
-data_loading: TRUE
+data_loading: FALSE
 data_loading_header: TRUE
 data_ignore:
-cache_loading: TRUE
+cache_loading: FALSE
 recursive_loading: FALSE
 munging: TRUE
 logging: FALSE
