@@ -57,7 +57,7 @@ def run_eye_tracking():
     my_eyetracker.subscribe_to(tr.EYETRACKER_GAZE_DATA, gaze_data_callback, as_dictionary=True)
 
     # Time interval
-    time.sleep(20)
+    time.sleep(60)
 
     # Unsubscribe from data
     my_eyetracker.unsubscribe_from(tr.EYETRACKER_GAZE_DATA, gaze_data_callback)
