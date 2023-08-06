@@ -9,9 +9,9 @@ def run_eye_tracking():
     my_eyetracker = found_eyetrackers[0]
 
     # Create CSV file and writer for main CSV
-    folder_path = "/Users/harvey/IdeaProjects/CSC_8639_3.8/Plot Data/data/PNL"
+    #folder_path = "/Users/harvey/IdeaProjects/CSC_8639_3.8/Plot Data/data/PNL"
     #folder_path = "/Users/harvey/IdeaProjects/CSC_8639_3.8/Plot Data/data/Sankey"
-    #folder_path = "/Users/harvey/IdeaProjects/CSC_8639_3.8/Plot Data/data/Waterfall"
+    folder_path = "/Users/harvey/IdeaProjects/CSC_8639_3.8/Plot Data/data/Waterfall"
     main_filename = f"{folder_path}/gaze_data.csv"
     main_csv_file = open(main_filename, mode='a', newline='')
     main_writer = csv.writer(main_csv_file)
@@ -57,7 +57,7 @@ def run_eye_tracking():
     my_eyetracker.subscribe_to(tr.EYETRACKER_GAZE_DATA, gaze_data_callback, as_dictionary=True)
 
     # Time interval
-    time.sleep(10)
+    time.sleep(20)
 
     # Unsubscribe from data
     my_eyetracker.unsubscribe_from(tr.EYETRACKER_GAZE_DATA, gaze_data_callback)
