@@ -10,7 +10,7 @@ sankey <- sankey[complete.cases(sankey), ]
 
 # Calculate the average gaze point between left and right eyes
 sankey$Average_X <- (sankey$`Left Eye X` + sankey$`Right Eye X`) / 2
-sankey$Average_Y <- (sankey$`Left Eye Y` + sankey$`Right Eye Y`) / 2
+sankey$Average_Y <- ((sankey$`Left Eye Y` + sankey$`Right Eye Y`) / 2)*-1
 
 # Create the heatmap for the average gaze points with smaller circles (h = 0.02) and without labels, grid, and legend
 heatmap_sk <- ggplot(sankey, aes(x = Average_X, y = Average_Y)) +
@@ -19,7 +19,7 @@ heatmap_sk <- ggplot(sankey, aes(x = Average_X, y = Average_Y)) +
   theme_minimal() +
   theme(legend.position = "none") +  
   scale_x_continuous(limits = c(0, 1)) +
-  scale_y_continuous(limits = c(0, 1))
+  scale_y_continuous(limits = c(-1, 0))
 
 # Print the heatmap
 print(heatmap_sk)

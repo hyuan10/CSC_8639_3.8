@@ -10,7 +10,7 @@ waterfall <- waterfall[complete.cases(waterfall), ]
 
 # Calculate the average gaze point between left and right eyes
 waterfall$Average_X <- (waterfall$`Left Eye X` + waterfall$`Right Eye X`) / 2
-waterfall$Average_Y <- (waterfall$`Left Eye Y` + waterfall$`Right Eye Y`) / 2
+waterfall$Average_Y <- ((waterfall$`Left Eye Y` + waterfall$`Right Eye Y`) / 2)*-1
 
 # Create the heatmap for the average gaze points with smaller circles (h = 0.02) and without labels, grid, and legend
 heatmap_wf <- ggplot(waterfall, aes(x = Average_X, y = Average_Y)) +
@@ -19,7 +19,7 @@ heatmap_wf <- ggplot(waterfall, aes(x = Average_X, y = Average_Y)) +
   theme_minimal() +
   theme(legend.position = "none") +  
   scale_x_continuous(limits = c(0, 1)) +
-  scale_y_continuous(limits = c(0, 1))
+  scale_y_continuous(limits = c(-1, 0))
   
 
 # Print the heatmap

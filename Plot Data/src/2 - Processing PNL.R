@@ -10,7 +10,7 @@ PNL <- PNL[complete.cases(PNL), ]
 
 # Calculate the average gaze point between left and right eyes
 PNL$Average_X <- (PNL$`Left Eye X` + PNL$`Right Eye X`) / 2
-PNL$Average_Y <- (PNL$`Left Eye Y` + PNL$`Right Eye Y`) / 2
+PNL$Average_Y <- ((PNL$`Left Eye Y` + PNL$`Right Eye Y`) / 2)*-1
 
 # Create the heatmap for the average gaze points
 heatmap_PNL <- ggplot(PNL, aes(x = Average_X, y = Average_Y)) +
@@ -19,7 +19,7 @@ heatmap_PNL <- ggplot(PNL, aes(x = Average_X, y = Average_Y)) +
   theme_minimal() +
   theme(legend.position = "none") +  
   scale_x_continuous(limits = c(0, 1)) +
-  scale_y_continuous(limits = c(0, 1))
+  scale_y_continuous(limits = c(-1, 0))
 
 # Print the heatmap
 print(heatmap_PNL)
