@@ -24,15 +24,3 @@ heatmap_wf <- ggplot(waterfall, aes(x = Average_X, y = Average_Y)) +
 
 # Print the heatmap
 print(heatmap_wf)
-
-
-heatmap_wf <- ggplot(waterfall, aes(x = Average_X, y = Average_Y)) +
-  stat_density_2d(aes(fill = ..level..), geom = "polygon", h = 0.03) +
-  scale_fill_gradientn(colors = RColorBrewer::brewer.pal(9, "YlOrRd")) +
-  theme_minimal() +
-  theme(legend.position = "none") +
-  scale_x_continuous(limits = c(0, 1)) +
-  scale_y_continuous(limits = c(0, 1))
-
-# Print the heatmap with axis data gridlines and numbers on the edges
-print(heatmap_wf)
