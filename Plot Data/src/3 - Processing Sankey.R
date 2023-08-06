@@ -14,10 +14,12 @@ sankey$Average_Y <- (sankey$`Left Eye Y` + sankey$`Right Eye Y`) / 2
 
 # Create the heatmap for the average gaze points with smaller circles (h = 0.02) and without labels, grid, and legend
 heatmap_sk <- ggplot(sankey, aes(x = Average_X, y = Average_Y)) +
-  stat_density_2d(aes(fill = ..level..), geom = "polygon", h = 0.08) +
+  stat_density_2d(aes(fill = ..level..), geom = "polygon", h = 0.03) +
   scale_fill_gradientn(colors = RColorBrewer::brewer.pal(9, "YlOrRd")) +
-  theme_void() +
-  theme(legend.position = "none")
+  theme_minimal() +
+  theme(legend.position = "none") +  
+  scale_x_continuous(limits = c(0, 1)) +
+  scale_y_continuous(limits = c(0, 1))
 
 # Print the heatmap
 print(heatmap_sk)
