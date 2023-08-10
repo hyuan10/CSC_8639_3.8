@@ -11,3 +11,4 @@ venv/
 ENV/
 env.bak/
 Vent.bak/
+.RData
