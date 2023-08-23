@@ -22,7 +22,10 @@ ggplot(quads_summary, aes(x=`How often do you review financial data?`, y=`How of
   geom_hline(yintercept = 0, linetype="solid", color = "black") +
   geom_vline(xintercept = 0, linetype="solid", color = "black") +
   theme_minimal() + 
-  labs(x="How often do you review financial data?", y="How often do you review data visualisations?", title="Scatter Plot of Quads") + 
+  labs(x="How often do you review financial data?", y="How often do you review data visualisations?", title="Representation of Expertise") + 
   scale_size_continuous(range = c(1, 8), guide = "legend") + # adjust point sizes
   xlim(-2, 2) + 
-  ylim(-2, 2)
+  ylim(-2, 2) +
+  theme(axis.title.x = element_text(face = "bold"),  # Bold x label
+      axis.title.y = element_text(face = "bold"))  # Bold y label
+
