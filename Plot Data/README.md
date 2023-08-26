@@ -1,39 +1,16 @@
-# Plot Data
+Welcome to "Compare the Ocular Behaviour of Novices and Visualisation Experts"!
 
-Welcome to ProjectTemplate!
+To initialise this project, the "scr" folder within the main "Plot Data - Project Template"" folder will set the working directory to the correct main folder path and initialise all of the required libraries.
 
-This file introduces you to ProjectTemplate, but you should eventually replace
-the contents of this file with an introduction to your project. People who
-work with your data in the future will thank you for it, including your future
-self.
 
-ProjectTemplate is an R package that helps you organize your statistical
-analysis projects. Since you're reading this file, we'll assume that you've
-already called `create.project()` to set up this project and all of its
-contents.
 
-To load your new project, you'll first need to `setwd()` into the directory
-where this README file is located. Then you need to run the following two
-lines of R code:
 
-	library('ProjectTemplate')
-	load.project()
+In the fast paced world of business, financial data is often the driving factor behind data driven decision making. At its core, financial data acts as a company's mains key performance indicator (KPI), revealing the intricacies of its performance throughout its lifetime. However, for many, these sets of numbers can often be difficult, confusing and baffling to understand for individuals that have not been trained to understand financial statements leaving them overwhelmed.
 
-After you enter the second line of code, you'll see a series of automated
-messages as ProjectTemplate goes about doing its work. This work involves:
-* Reading in the global configuration file contained in `config`.
-* Loading any R packages you listed in the configuration file.
-* Reading in any datasets stored in `data` or `cache`.
-* Preprocessing your data using the files in the `munge` directory.
+Data visualisation stands at the forefront of contemporary financial analysis, serving as a critical mechanism to condense intricate data sets into understandable graphical representations. Today's financial reports go beyond just tables and listings, incorporating graphical elements like dynamic bar graphs and detailed pie charts. This study specifically examines the use of more sophisticated visualisation techniques, such as Sankey diagrams and Waterfall charts, in enriching these financial narratives. Beyond being simply for aesthetic reasons, these visual tools play an instrumental role in demonstrating numerical intricacies, illuminating underlying trends and identifying potential anomalies or points of significance.
 
-Once that's done, you can execute any code you'd like. For every analysis
-you create, we'd recommend putting a separate file in the `src` directory.
-If the files start with the two lines mentioned above:
+The motivations behind this study was not simply for academic interest, it sought to yield practical insights for the benefits of the field of financial reporting. Upon completion of the study, a set of guidelines for presenting financial data, specifically income statements for the purpose of this study, was formulated for creators. In a time when decisions are predominantly guided by data, it is crucial that information is not only clear but also easily understandable. This clarity ensures that stakeholders, ranging from executives to investors, can readily grasp the essential message and gain valuable insights from said data.
 
-	library('ProjectTemplate')
-	load.project()
+To comprehend the impact of these visualisation techniques on data interpretation and visual attention, this experiment was initialised to study the differences between data experts and novices to compare the differences between their ocular behaviour. This investigation analysed the eye movements of participants as they engaged with traditional financial statements in contrast to their graphical counterparts. This method offered an unbiased perspective into the immediate reactions and focal points of the participants when exposed to various forms of data presentation.
 
-You'll have access to all of your data, already fully preprocessed, and
-all of the libraries you want to use.
-
-For more details about ProjectTemplate, see http://projecttemplate.net
+The disparity in experiences and ocular behavior is not confined solely to financial data. Experts across various fields, including analysts , engineering and pilots, have been observed to exhibit different patterns of eye movement and information processing. Studies have shown that experts are adept at rapidly extracting critical information from complex visualisations, often honing in on essential details that might be missed by less experienced observers. The understanding of such variations in ocular behavior across different fields can further enrich the development of tailored data visualisation techniques, ensuring they align with experience of the target audience.
